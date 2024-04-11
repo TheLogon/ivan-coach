@@ -11,7 +11,7 @@ import styles from "@/styles/page.module.scss"
 export function VideoMain() {
 	return (
 		<video autoPlay preload="none" loop muted className={styles.video}>
-			<source src={require("/iphone.mp4")} type="video/mp4" />
+			<source src="/iphone.mp4" type="video/mp4" />
 		</video>
 	)
 }
