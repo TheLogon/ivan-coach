@@ -151,9 +151,9 @@ export default function Home() {
 							<div className={styles.partners__img}>
 								<Image src={PartnerTwo} width={259} height={100} alt="" />
 							</div>
-							<div className={styles.partners__img}>
+							{/* <div className={styles.partners__img}>
 								<Image src={PartnerThree} width={259} height={100} alt="" />
-							</div>
+							</div> */}
 						</div>
 						<h4>{t("partners.subtitle-2")}</h4>
 						<p>{t("partners.text")}</p>
