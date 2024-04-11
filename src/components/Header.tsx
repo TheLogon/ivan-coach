@@ -24,9 +24,9 @@ export function Header({ linkOne, linkTwo, linkThree, linkFour }: { linkOne: str
 		<header id="header" className={styles.header}>
 			<div className={container.container}>
 				<div className={styles.header__inner}>
-					<div className={styles.header__logo}>
+					<Link href="#intro" onClick={handleScroll} className={styles.header__logo}>
 						<Image src={Logo} width={182} height={71} alt="" />
-					</div>
+					</Link>
 					<div className={[styles.header__menu, open && styles.active].join(" ")}>
 						<Link
 							href="#bonus"
