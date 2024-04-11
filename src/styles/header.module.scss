@@ -1,0 +1,166 @@
+@import "mixins.scss";
+
+.header {
+  padding: 13px 0;
+  backdrop-filter: blur(25px);
+  background: $chernyy-poluprozrachnyy;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  @include _768 {
+    padding: 20px 0;
+  }
+
+  // .header__inner
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include _768 {
+      flex-direction: row-reverse;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    @include _768 {
+      order: 1;
+    }
+  }
+
+  // .header__menu
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include _768 {
+      display: none;
+      position: fixed;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background: $chernyy;
+      border-radius: 40px;
+      padding: 40px;
+      flex-direction: column;
+      max-width: 568px;
+      width: 100%;
+
+      &.active {
+        display: flex;
+      }
+    }
+
+    // .header__menu_item
+
+    &_item {
+      font-weight: 700;
+      font-size: rem(24);
+      transition: all .1s ease-in-out;
+      text-transform: uppercase;
+
+      @include _768 {
+        background: $zelenyy;
+        font-size: rem(34);
+        border-radius: 10px;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @media (hover:hover) {
+        &:hover {
+          color: $zelenyy;
+          text-shadow: 0 0 50px $zelenyy;
+          transition: all .1s ease-in-out;
+        }
+      }
+
+      &.red {
+        color: $krasnyy;
+
+        @include _768 {
+          box-shadow: 0 0 50px 0 rgba(225, 16, 16, 0), inset 0 0 50px 0 rgba(225, 16, 16, 0.5);
+          background: $chernyy;
+        }
+
+        @media (hover:hover) {
+          &:hover {
+            text-shadow: 0 0 50px rgba(225, 16, 16, 0.5);
+            transition: all .1s ease-in-out;
+          }
+        }
+
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @include _768 {
+      display: block;
+
+      svg {
+        height: 48px;
+        width: 48px;
+      }
+    }
+  }
+
+  // .header__lang
+
+  &__lang {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @include _768 {
+      order: 1;
+
+      svg {
+        display: none;
+      }
+    }
+
+    // .header__lang_btn
+
+    &_btn {
+      border-radius: 10px;
+      background-color: $belyy-prozrachnyy;
+      width: 64px;
+      height: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: rem(24);
+
+      @include _768 {
+        height: 48px;
+        width: 48px;
+        font-size: rem(34);
+        background: $zelenyy;
+      }
+
+      &.active {
+        background: $zelenyy;
+
+        @include _768 {
+          display: none;
+        }
+
+      }
+    }
+  }
+}

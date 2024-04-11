@@ -1,0 +1,93 @@
+{
+	"header": {
+		"link-1": "Bonuses!",
+		"link-2": "Results",
+		"link-3": "Reviews",
+		"link-4": "Prices"
+	},
+	"intro": {
+		"title": "CREATE",
+		"title-2": "YOUR",
+		"title-3": "DREAM BODY",
+		"description": "Discover new possibilities of your body",
+		"text-1": "10 Online sessions",
+		"text-2": "1 OFFLINE session"
+	},
+	"product": {
+		"title": "ONLINE TRAINING",
+		"title-2": "RIGHT NOW!",
+		"card": {
+			"title": "Why Online Training?",
+			"text": "The most important resource is TIME Everyone has a job/study/family, so you can easily train at your convenience!"
+		},
+		"card-2": {
+			"title": "How will ONLINE solve your GOAL?",
+			"text": "I make programs for each person! Before we all discuss his desires, experience, possible health restrictions. I am never looking for a template solution. Each workout is different from the previous one, and I compose based on your REPORT that you done!"
+		},
+		"card-3": {
+			"title": "What does Online look like?",
+			"text": "Each time you get a NEW workout with the most detailed description (how many reruns, sets and with what weight, also rest time between approaches) and a video with proper technique for each exercise!"
+		},
+		"video-title": "Here you see the training I sent and the client’s REPORT"
+	},
+	"about": {
+		"title": "Someone can say",
+		"title-2": "offline training is more effective than ONLINE",
+		"descr": "I easily solve this moment! I am in touch with you almost 24/7. You can always ask me a question in WhatsApp and Telegram. You can also send me a video of how you do the exercise if you are not sure of the right and I will help you!",
+		"text": "And now really cool BONUS💥",
+		"text-2": "FOR THOSE WHO LIVE IN ABU DHABI THE TRAINING PACKAGE INCLUDES A FREE OFF-LINE WORKOUT WITH ME, WHERE WE WILL PERFORM THE TECHNIQUE OF ABSOLUTELY ALL THE EXERCISES, I SHOW HOW TO ADJUST EACH MACHINE THAT YOUR WORKOUT TO BE EFFECTIVE!"
+	},
+	"partners": {
+		"title": "BUT THAT’S NOT AT ALL",
+		"subtitle": "My partners:",
+		"subtitle-2": "give my clients a 25% discount!",
+		"text": "After payment, you will receive from me a promotional code from each partner, thereby becoming even more involved in HEALTHY lifestyle!"
+	},
+	"results": {
+		"title": "results",
+		"text": "And now remember how many times you have started and thrown halfway. How many approaches you have tried and all past! My accumulated experience and knowledge over 10 years of work will help you to become what you long want to BE!",
+		"slider": {
+			"slide": "1 MONTH",
+			"slide-2": "2 MONTHS",
+			"slide-3": "3 MONTHS",
+			"slide-4": "3 MONTHS",
+			"slide-5": "3 MONTHS",
+			"slide-6": "3 MONTHS",
+			"slide-7": "6 MONTHS",
+			"slide-8": "3 YEARS"
+		},
+		"text-2": "BEFORE / AFTER"
+	},
+	"reviews": {
+		"title": "Reviews",
+		"review": {
+			"name": "Mohammed",
+			"decr": "6 months",
+			"text": "Ivan is a really great gym instructor he has helped me through my gym journey and helped me gain a considerable amount of muscle and knowledge"
+		},
+		"review-2": {
+			"name": "Abood and Sultan",
+			"decr": "20 workouts",
+			"text": "Hello there we are sultan and abood we  want to talk about our experience with coach ivan , it was a great experience he is very nice person , he respect the time and very flexible, every day new exercises every day new training style, sometimes indoor sometimes outdoor, he take care of our food, always in touch with us , we got a great result with him 🔥🔥, and i ask everyone to try this experience it is very exiting 🔥🔥😍"
+		},
+		"review-3": {
+			"name": "Yousif",
+			"decr": "6 months",
+			"text": "Hi Ivan, I just wanted to share my thoughts on the classes you lead. Your energy and expertise make each session engaging and effective. I particularly enjoy the challenging yet rewarding workouts in your classes."
+		}
+	},
+	"price": {
+		"title": "Payment information",
+		"old-price": "999 AED",
+		"price": "599 AED",
+		"text": "Immediately after payment you will receive from me the promised promotional codes at a discount and we call about the first meeting (offline training) and begin to create you NEW!"
+	},
+	"widgets": {
+		"scroll-top": "return to top",
+		"text": "(10 sessions, and one more OFFLINE)",
+		"btn": "More details"
+	},
+	"btns": {
+		"btn": "Buy"
+	}
+}
