@@ -26,7 +26,7 @@ export function WidgetSale({ price, oldPrice, text, btn }: { price: string; oldP
 				<span className={BibasBold.className}>{oldPrice}</span>
 			</div>
 			<div className={styles.widget__text}>{text}</div>
-			<Link href="#bonus" onClick={handleScroll} className={styles.widget__btn}>
+			<Link href="#price" onClick={handleScroll} className={styles.widget__btn}>
 				{btn}
 			</Link>
 			<button onClick={() => setOpen(false)} className={styles.widget__close}>
