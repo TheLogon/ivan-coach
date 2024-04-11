@@ -24,6 +24,7 @@ import { IntroSlider } from "@/components/IntroSlider"
 import { Header } from "@/components/Header"
 import { WidgetSale } from "@/components/WidgetSale"
 import { VideoMain } from "@/components/VideoMain"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const BibasBold = localFont({
 	src: "../../../public/fonts/bebasneuebold.woff2",
@@ -226,6 +227,7 @@ export default function Home() {
 				</div>
 			</footer>
 			<WidgetSale price={t("price.price")} oldPrice={t("price.old-price")} text={t("widgets.text")} btn={t("widgets.btn")} />
+			<SpeedInsights />
 		</>
 	)
 }
