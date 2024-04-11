@@ -59,10 +59,10 @@ export function ResultsBlock({
 }) {
 	const sliderRef = useRef()
 	return (
-		<section id="results" className={[styles.results, BibasBold.className].join(" ")}>
+		<section id="results" className={[styles.results].join(" ")}>
 			<div className={container.container}>
 				<div className={styles.results__inner}>
-					<h2>{title}</h2>
+					<h2 className={BibasBold.className}>{title}</h2>
 					<p>{text}</p>
 					<Swiper className={styles.results__swiper} onSwiper={it => ((sliderRef.current as any) = it)} modules={[Navigation]} spaceBetween={40} slidesPerView={3} breakpoints={{ 1577: { slidesPerView: 3 }, 1145: { slidesPerView: 2 }, 320: { slidesPerView: 1 } }}>
 						<SwiperSlide>

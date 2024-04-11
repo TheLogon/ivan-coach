@@ -1,17 +1,25 @@
+"use client"
 // Module
-
+// @ts-ignore
+import video from "/public/Iphone.mp4"
 // Images
-import Phone from "/public/assets/phone.png"
 
 // Styles
-import container from "@/styles/container.module.scss"
 import styles from "@/styles/page.module.scss"
+import { useEffect, useState } from "react"
 // Components
 
 export function VideoMain() {
+	const [isClient, setIsClient] = useState(false)
+
+	useEffect(() => {
+		setIsClient(true)
+	}, [])
 	return (
-		<video autoPlay preload="none" loop muted className={styles.video}>
-			<source src="/iphone.mp4" type="video/mp4" />
-		</video>
+		isClient && (
+			<video autoPlay preload="none" loop muted className={styles.video}>
+				<source src={video} type="video/mp4" />
+			</video>
+		)
 	)
 }

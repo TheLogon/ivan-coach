@@ -23,6 +23,7 @@ import { ReviewsBlock } from "@/components/ReviewsBlock"
 import { IntroSlider } from "@/components/IntroSlider"
 import { Header } from "@/components/Header"
 import { WidgetSale } from "@/components/WidgetSale"
+import { VideoMain } from "@/components/VideoMain"
 
 const BibasBold = localFont({
 	src: "../../../public/fonts/bebasneuebold.woff2",
@@ -30,9 +31,9 @@ const BibasBold = localFont({
 	style: "normal",
 	display: "swap",
 })
-const DynamicVideo = dynamic(() => import("@/components/VideoMain").then(mod => mod.VideoMain), {
-	loading: () => <p>Loading...</p>,
-})
+// const DynamicVideo = dynamic(() => import("@/components/VideoMain").then(mod => mod.VideoMain), {
+// 	loading: () => <p>Loading...</p>,
+// })
 export default function Home() {
 	const t = useTranslations("")
 	return (
@@ -108,7 +109,7 @@ export default function Home() {
 							</div>
 						</div>
 						<div className={styles.product__wrapper}>
-							<DynamicVideo />
+							<VideoMain />
 							<div className={styles.product__wrapper_right}>
 								<h2 className={BibasBold.className}>{t("product.video-title")}</h2>
 								<BtnBay red={true} />
