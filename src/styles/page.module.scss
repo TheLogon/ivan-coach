@@ -369,6 +369,10 @@
         background-position: top center;
       }
 
+      @media (max-width:420px) {
+        padding: 30px;
+      }
+
       @media (max-width:380px) {
         padding: 7px;
         height: 204px;
