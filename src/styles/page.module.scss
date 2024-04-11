@@ -1124,12 +1124,14 @@
   background: $chernyy-poluprozrachnyy;
   z-index: 9;
 
-  @include _1440 {
-    display: none;
-  }
+
 
   &.active {
     display: flex;
+
+    @include _1440 {
+      display: none;
+    }
   }
 
   // .widget__price
