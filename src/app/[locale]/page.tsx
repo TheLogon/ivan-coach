@@ -4,7 +4,7 @@ import Link from "next/link"
 import localFont from "next/font/local"
 import dynamic from "next/dynamic"
 import Logo from "/public/assets/logo.svg"
-import { useTranslations } from "next-intl"
+import { useLocale, useTranslations } from "next-intl"
 
 import BgAbout from "/public/assets/bg-about.png"
 import PartnerOne from "/public/assets/partner.svg"
@@ -32,11 +32,10 @@ const BibasBold = localFont({
 	style: "normal",
 	display: "swap",
 })
-// const DynamicVideo = dynamic(() => import("@/components/VideoMain").then(mod => mod.VideoMain), {
-// 	loading: () => <p>Loading...</p>,
-// })
+
 export default function Home() {
 	const t = useTranslations("")
+	const locale = useLocale()
 	return (
 		<>
 			<Header linkOne={t("header.link-1")} linkTwo={t("header.link-2")} linkThree={t("header.link-3")} linkFour={t("header.link-4")} />
@@ -119,49 +118,53 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section id="bonus" className={styles.about}>
-				<div className={styles.about__img}>
-					<Image src={BgAbout} width={1920} height={700} alt="bg" />
-				</div>
-				<div className={container.container}>
-					<div className={styles.about__inner}>
-						<div className={styles.about__title}>
-							<h2 className={BibasBold.className}>{t("about.title")}</h2>
-							<h4 className={BibasBold.className}>{t("about.title-2")}</h4>
-						</div>
-						<p className={styles.about__text}>{t("about.descr")}</p>
-						<div className={styles.about__btns}>
-							<div className={styles.about__btn}>{t("about.text")}</div>
-							<BtnBay />
-						</div>
-						<div className={styles.about__bottom}>
-							<p>{t("about.text-2")}</p>
+			{locale == "en" && (
+				<section id="bonus" className={styles.about}>
+					<div className={styles.about__img}>
+						<Image src={BgAbout} width={1920} height={700} alt="bg" />
+					</div>
+					<div className={container.container}>
+						<div className={styles.about__inner}>
+							<div className={styles.about__title}>
+								<h2 className={BibasBold.className}>{t("about.title")}</h2>
+								<h4 className={BibasBold.className}>{t("about.title-2")}</h4>
+							</div>
+							<p className={styles.about__text}>{t("about.descr")}</p>
+							<div className={styles.about__btns}>
+								<div className={styles.about__btn}>{t("about.text")}</div>
+								<BtnBay />
+							</div>
+							<div className={styles.about__bottom}>
+								<p>{t("about.text-2")}</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section className={styles.partners}>
-				<div className={container.container}>
-					<div className={[styles.partners__inner, BibasBold.className].join(" ")}>
-						<h2>{t("partners.title")}</h2>
-						<h4>{t("partners.subtitle")}</h4>
-						<div className={styles.partners__imgs}>
-							<div className={styles.partners__img}>
-								<Image src={PartnerOne} width={259} height={100} alt="" />
-							</div>
-							<div className={styles.partners__img}>
-								<Image src={PartnerTwo} width={259} height={100} alt="" />
-							</div>
-							{/* <div className={styles.partners__img}>
+				</section>
+			)}
+			{locale == "en" && (
+				<section className={styles.partners}>
+					<div className={container.container}>
+						<div className={[styles.partners__inner, BibasBold.className].join(" ")}>
+							<h2>{t("partners.title")}</h2>
+							<h4>{t("partners.subtitle")}</h4>
+							<div className={styles.partners__imgs}>
+								<div className={styles.partners__img}>
+									<Image src={PartnerOne} width={259} height={100} alt="" />
+								</div>
+								<div className={styles.partners__img}>
+									<Image src={PartnerTwo} width={259} height={100} alt="" />
+								</div>
+								{/* <div className={styles.partners__img}>
 								<Image src={PartnerThree} width={259} height={100} alt="" />
 							</div> */}
+							</div>
+							<h4>{t("partners.subtitle-2")}</h4>
+							<p>{t("partners.text")}</p>
+							<BtnBay />
 						</div>
-						<h4>{t("partners.subtitle-2")}</h4>
-						<p>{t("partners.text")}</p>
-						<BtnBay />
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 			<ResultsBlock
 				title={t("results.title")}
 				text={t("results.text")}

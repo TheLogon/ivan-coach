@@ -11,6 +11,7 @@ import styles from "@/styles/header.module.scss"
 import container from "@/styles/container.module.scss"
 import { LangSwitcher } from "./LangSwitcher"
 import { useState } from "react"
+import { useLocale } from "next-intl"
 // Components
 const robotoBold = localFont({
 	src: "../../public/fonts/bebasneuebold.woff2",
@@ -20,6 +21,7 @@ const robotoBold = localFont({
 })
 export function Header({ linkOne, linkTwo, linkThree, linkFour }: { linkOne: string; linkTwo: string; linkThree: string; linkFour: string }) {
 	const [open, setOpen] = useState(false)
+	const locale = useLocale()
 	return (
 		<header id="header" className={styles.header}>
 			<div className={container.container}>
@@ -28,15 +30,17 @@ export function Header({ linkOne, linkTwo, linkThree, linkFour }: { linkOne: str
 						<Image src={Logo} width={182} height={71} alt="" />
 					</Link>
 					<div className={[styles.header__menu, open && styles.active].join(" ")}>
-						<Link
-							href="#bonus"
-							onClick={e => {
-								handleScroll(e)
-								setOpen(false)
-							}}
-							className={[styles.header__menu_item, styles.red, robotoBold.className].join(" ")}>
-							{linkOne}
-						</Link>
+						{locale == "en" && (
+							<Link
+								href="#bonus"
+								onClick={e => {
+									handleScroll(e)
+									setOpen(false)
+								}}
+								className={[styles.header__menu_item, styles.red, robotoBold.className].join(" ")}>
+								{linkOne}
+							</Link>
+						)}
 						<Link
 							href="#results"
 							onClick={e => {
