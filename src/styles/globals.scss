@@ -52,11 +52,11 @@ h2 {
 
   @include _768 {
     font-size: rem(60);
+    text-align: center;
   }
 
   @media (max-width:480px) {
     font-size: rem(48);
-    text-align: center;
   }
 }
 

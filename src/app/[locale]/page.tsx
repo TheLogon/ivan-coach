@@ -55,10 +55,12 @@ export default function Home() {
 							<div className={styles.offer__btns}>
 								<BtnBay />
 								<div className={[styles.offer__btn, BibasBold.className].join(" ")}>{t("intro.text-1")}</div>
-								<div className={[styles.offer__text, BibasBold.className].join(" ")}>
-									<span>+</span>
-									{t("intro.text-2")}
-								</div>
+								{locale == "en" && (
+									<div className={[styles.offer__text, BibasBold.className].join(" ")}>
+										<span>+</span>
+										{t("intro.text-2")}
+									</div>
+								)}
 							</div>
 						</div>
 					</div>
@@ -118,41 +120,50 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{locale == "en" && (
-				<section id="bonus" className={styles.about}>
-					<div className={styles.about__img}>
-						<Image src={BgAbout} width={1920} height={700} alt="bg" />
-					</div>
-					<div className={container.container}>
-						<div className={styles.about__inner}>
-							<div className={styles.about__title}>
-								<h2 className={BibasBold.className}>{t("about.title")}</h2>
-								<h4 className={BibasBold.className}>{t("about.title-2")}</h4>
-							</div>
-							<p className={styles.about__text}>{t("about.descr")}</p>
-							<div className={styles.about__btns}>
-								<div className={styles.about__btn}>{t("about.text")}</div>
-								<BtnBay />
-							</div>
+
+			<section id="bonus" className={styles.about}>
+				<div className={styles.about__img}>
+					<Image src={BgAbout} width={1920} height={700} alt="bg" />
+				</div>
+				<div className={container.container}>
+					<div className={styles.about__inner}>
+						<div className={styles.about__title}>
+							<h2 className={BibasBold.className}>{t("about.title")}</h2>
+							<h4 className={BibasBold.className}>{t("about.title-2")}</h4>
+						</div>
+						<p className={styles.about__text}>{t("about.descr")}</p>
+						<div className={styles.about__btns}>
+							{locale == "en" && <div className={styles.about__btn}>{t("about.text")}</div>}
+							<BtnBay />
+						</div>
+						{locale == "en" && (
 							<div className={styles.about__bottom}>
 								<p>{t("about.text-2")}</p>
 							</div>
-						</div>
+						)}
 					</div>
-				</section>
-			)}
+				</div>
+			</section>
 			{locale == "en" && (
 				<section className={styles.partners}>
 					<div className={container.container}>
 						<div className={[styles.partners__inner, BibasBold.className].join(" ")}>
 							<h2>{t("partners.title")}</h2>
-							<h4>{t("partners.subtitle")}</h4>
+							<h4>
+								{t("partners.subtitle")} <span>They Trast me</span>
+							</h4>
 							<div className={styles.partners__imgs}>
 								<div className={styles.partners__img}>
 									<Image src={PartnerOne} width={259} height={100} alt="" />
+									<h4>Good Health</h4>
+									<p>company with a wide range of products and quality.</p>
+									<span>get 5-20 % discount</span>
 								</div>
 								<div className={styles.partners__img}>
 									<Image src={PartnerTwo} width={259} height={100} alt="" />
+									<h4>Basiligo</h4>
+									<p>Only quality food and delicious recipes. They have discounts on rations of 15 and 20 %</p>
+									<span>get an additional 5% discount</span>
 								</div>
 								{/* <div className={styles.partners__img}>
 								<Image src={PartnerThree} width={259} height={100} alt="" />
@@ -208,10 +219,12 @@ export default function Home() {
 							</div>
 							<div className={styles.price__wrapper_btns}>
 								<div className={[styles.offer__btn, BibasBold.className].join(" ")}>{t("intro.text-1")}</div>
-								<div className={[styles.offer__text, BibasBold.className].join(" ")}>
-									<span>+</span>
-									{t("intro.text-2")}
-								</div>
+								{locale == "en" && (
+									<div className={[styles.offer__text, BibasBold.className].join(" ")}>
+										<span>+</span>
+										{t("intro.text-2")}
+									</div>
+								)}
 							</div>
 						</div>
 						<p>{t("price.text")}</p>

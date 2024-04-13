@@ -7,17 +7,17 @@
 <path d="M270.5 241.07H252.5V245.07H270.5V241.07ZM270.5 257.07H252.5V261.07H270.5V257.07ZM237.58 249.07L230.5 241.99L233.32 239.17L237.56 243.41L246.04 234.93L248.86 237.75L237.58 249.07ZM237.58 265.07L230.5 257.99L233.32 255.17L237.56 259.41L246.04 250.93L248.86 253.75L237.58 265.07Z" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_67_4487" x1="4.84288e-05" y1="-4.00008" x2="430.778" y2="297.804" gradientUnits="userSpaceOnUse">
-<stop stopColor="#AE0707"/>
-<stop offset="0.0529491" stopColor="#AE0707" stop-opacity="0.664344"/>
-<stop offset="0.109407" stopColor="#AE0707" stop-opacity="0.44"/>
-<stop offset="0.211644" stopColor="#AE0707" stop-opacity="0.25"/>
-<stop offset="0.375781" stopColor="#AE0707" stop-opacity="0.05"/>
-<stop offset="0.499557" stopColor="#AE0707" stop-opacity="0"/>
-<stop offset="0.619204" stopColor="#AE0707" stop-opacity="0.05"/>
-<stop offset="0.790121" stopColor="#AE0707" stop-opacity="0.25"/>
-<stop offset="0.886969" stopColor="#AE0707" stop-opacity="0.34"/>
-<stop offset="0.949705" stopColor="#AE0707" stop-opacity="0.52783"/>
-<stop offset="1" stopColor="#AE0707"/>
+<stop stop-color="#AE0707"/>
+<stop offset="0.0529491" stop-color="#AE0707" stop-opacity="0.664344"/>
+<stop offset="0.109407" stop-color="#AE0707" stop-opacity="0.44"/>
+<stop offset="0.211644" stop-color="#AE0707" stop-opacity="0.25"/>
+<stop offset="0.375781" stop-color="#AE0707" stop-opacity="0.05"/>
+<stop offset="0.499557" stop-color="#AE0707" stop-opacity="0"/>
+<stop offset="0.619204" stop-color="#AE0707" stop-opacity="0.05"/>
+<stop offset="0.790121" stop-color="#AE0707" stop-opacity="0.25"/>
+<stop offset="0.886969" stop-color="#AE0707" stop-opacity="0.34"/>
+<stop offset="0.949705" stop-color="#AE0707" stop-opacity="0.52783"/>
+<stop offset="1" stop-color="#AE0707"/>
 </linearGradient>
 </defs>
 </svg>

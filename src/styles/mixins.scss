@@ -50,6 +50,12 @@ $second-family: "Ubuntu", sans-serif;
   }
 }
 
+@mixin _480 {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
 @mixin _370 {
   @media (max-width: 370px) {
     @content;
