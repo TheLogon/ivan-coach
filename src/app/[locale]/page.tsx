@@ -150,7 +150,7 @@ export default function Home() {
 						<div className={[styles.partners__inner, BibasBold.className].join(" ")}>
 							<h2>{t("partners.title")}</h2>
 							<h4>
-								{t("partners.subtitle")} <span>They Trast me</span>
+								{t("partners.subtitle")} <span>They Trust me</span>
 							</h4>
 							<div className={styles.partners__imgs}>
 								<div className={styles.partners__img}>

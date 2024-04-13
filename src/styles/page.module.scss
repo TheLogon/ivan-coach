@@ -387,19 +387,11 @@
 
       @include _600 {
         width: 100%;
-        background-position: top center;
       }
 
       @media (max-width:420px) {
         padding: 20px;
       }
-
-      @media (max-width:380px) {
-        padding: 7px;
-        height: 204px;
-      }
-
-
 
       p {
         text-align: center;
@@ -709,6 +701,11 @@
   }
 
   h4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
     text-transform: uppercase;
     color: $belyy;
 
@@ -717,10 +714,12 @@
     }
 
     span {
+      display: block;
       background: $zelenyy;
       border-radius: 10px;
       padding: 5px 20px;
-      margin-left: 20px;
+      // margin-left: 20px;
+      white-space: pre;
     }
   }
 
