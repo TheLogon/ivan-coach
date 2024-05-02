@@ -1165,6 +1165,278 @@
   &__logo {}
 }
 
+.start {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $chernyy;
+  z-index: 999999;
+  width: 100vw;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &.active {
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+    background: rgb(174, 7, 7);
+    filter: blur(200px);
+    z-index: -1;
+  }
+
+
+  // .start__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // .start__logo
+
+  &__logo {
+    margin-bottom: 160px;
+  }
+
+  // .start__wrapper
+
+  &__wrapper {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 100%;
+      text-align: center;
+    }
+  }
+
+  // .start__btns
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include _768 {
+      width: 100%;
+    }
+
+    @include _370 {
+      gap: 20px;
+    }
+  }
+
+  // .start__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 408px;
+    height: 132px;
+    border-radius: 10px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+
+    @include _768 {
+      width: 100%;
+    }
+
+    @include _370 {
+      height: 70px;
+      font-size: 24px;
+      gap: 10px;
+
+      svg {
+        width: 29px;
+        height: 29px;
+      }
+    }
+
+    &:first-child {
+      background-color: $zelenyy;
+
+    }
+
+    &:last-child {
+      background-color: $krasnyy;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+  }
+
+  // .start__slide
+
+  &__slide {
+    border-radius: 20px;
+    width: 408px;
+    height: 676px;
+    background: $chernyy;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include _480 {
+      width: 220px;
+      height: 521px;
+    }
+
+    // .start__slide_top
+
+    &_top {
+      background: $krasnyy;
+      width: 100%;
+      height: 68px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h4 {
+        color: $belyy;
+
+        @include _480 {
+          font-size: rem(24);
+        }
+      }
+    }
+
+    // .start__slide_img
+
+    &_img {
+      @include _480 {
+        img {
+          object-fit: cover;
+          object-position: top;
+          height: 250px;
+        }
+      }
+    }
+
+    // .start__slide_price
+
+    &_price {
+      margin-top: -25px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: $krasnyy;
+      width: fit-content;
+
+      @include _480 {
+        padding: 10px 20px;
+      }
+
+      p {
+        &:first-child {
+          font-weight: 700;
+          font-size: 40px;
+          line-height: 100%;
+
+          @include _480 {
+            font-size: rem(24);
+          }
+        }
+
+        &:last-child {
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 100%;
+          text-decoration: line-through;
+
+          @include _480 {
+            font-size: rem(14);
+          }
+        }
+      }
+    }
+
+    // .start__slide_descr
+
+    &_descr {
+      margin-top: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 100%;
+      text-align: center;
+      margin-bottom: auto;
+      padding: 0 20px;
+
+      @include _480 {
+        font-size: rem(16);
+      }
+    }
+
+    // .start__slide_btn
+
+    &_btn {
+      border-radius: 10px;
+      width: 368px;
+      height: 88px;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $krasnyy;
+      margin-bottom: 20px;
+
+      @include _480 {
+        width: 180px;
+        height: 37px;
+        font-size: rem(24);
+      }
+    }
+  }
+
+  &__back {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 568px;
+    height: 84px;
+    background: $chernyy;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include _480 {
+      width: 288px;
+      height: 44px;
+      font-size: 24px;
+    }
+  }
+}
+
 // Widgets
 
 .widget {

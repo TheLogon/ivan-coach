@@ -25,6 +25,7 @@ import { Header } from "@/components/Header"
 import { WidgetSale } from "@/components/WidgetSale"
 import { VideoMain } from "@/components/VideoMain"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { StartScreen } from "@/components/StartScreen"
 
 const BibasBold = localFont({
 	src: "../../../public/fonts/bebasneuebold.woff2",
@@ -36,8 +37,10 @@ const BibasBold = localFont({
 export default function Home() {
 	const t = useTranslations("")
 	const locale = useLocale()
+
 	return (
 		<>
+			<StartScreen />
 			<Header linkOne={t("header.link-1")} linkTwo={t("header.link-2")} linkThree={t("header.link-3")} linkFour={t("header.link-4")} />
 			<div id="intro" className={styles.intro}>
 				<div className={styles.intro__slider}>
