@@ -42,7 +42,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<p>You’ll find out all features of training, and where to make a focus for wide shoulders</p>
 					</div>
 					<div className={styles.start__slide_btn}>
-						<Link href="#" className={BibasBold.className}>
+						<Link href="https://pay.ziina.com/ivanrazmazin13/kwazyDS2b" className={BibasBold.className}>
 							Buy
 						</Link>
 					</div>
@@ -62,7 +62,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<p>You’ll get knowledge about arms muscles that you didn’t know and didn’t train</p>
 					</div>
 					<div className={styles.start__slide_btn}>
-						<Link href="#" className={BibasBold.className}>
+						<Link href="https://pay.ziina.com/ivanrazmazin13/H3iRZcEZ3" className={BibasBold.className}>
 							Buy
 						</Link>
 					</div>
@@ -82,7 +82,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<p>This program contains exercises that make your abs BURN 🔥</p>
 					</div>
 					<div className={styles.start__slide_btn}>
-						<Link href="#" className={BibasBold.className}>
+						<Link href="https://pay.ziina.com/ivanrazmazin13/qpBkJmiiK" className={BibasBold.className}>
 							Buy
 						</Link>
 					</div>
@@ -102,7 +102,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<p>We’re pumping out all the back and which muscles are responsible for the back width</p>
 					</div>
 					<div className={styles.start__slide_btn}>
-						<Link href="#" className={BibasBold.className}>
+						<Link href="https://pay.ziina.com/ivanrazmazin13/BwS4d9v8i" className={BibasBold.className}>
 							Buy
 						</Link>
 					</div>
@@ -122,7 +122,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<p>You will be shocked as in a month your glutes will become bigger and rounder. You never tried most of exercises and techniques</p>
 					</div>
 					<div className={styles.start__slide_btn}>
-						<Link href="#" className={BibasBold.className}>
+						<Link href="https://pay.ziina.com/ivanrazmazin13/OLeye6dDE" className={BibasBold.className}>
 							Buy
 						</Link>
 					</div>

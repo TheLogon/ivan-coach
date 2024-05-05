@@ -1395,22 +1395,25 @@
     // .start__slide_btn
 
     &_btn {
-      border-radius: 10px;
-      width: 368px;
-      height: 88px;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: $krasnyy;
-      margin-bottom: 20px;
+      a {
 
-      @include _480 {
-        width: 180px;
-        height: 37px;
-        font-size: rem(24);
+        border-radius: 10px;
+        width: 368px;
+        height: 88px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $krasnyy;
+        margin-bottom: 20px;
+
+        @include _480 {
+          width: 180px;
+          height: 37px;
+          font-size: rem(24);
+        }
       }
     }
   }

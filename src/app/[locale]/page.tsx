@@ -58,6 +58,9 @@ export default function Home() {
 							<div className={styles.offer__btns}>
 								<BtnBay />
 								<div className={[styles.offer__btn, BibasBold.className].join(" ")}>{t("intro.text-1")}</div>
+								<Link href="https://pay.ziina.com/ivanrazmazin13/KBChQUWwo" className={[styles.offer__btn, styles.red, BibasBold.className].join(" ")}>
+									{t("intro.btn")}
+								</Link>
 								{locale == "en" && (
 									<div className={[styles.offer__text, BibasBold.className].join(" ")}>
 										<span>+</span>
