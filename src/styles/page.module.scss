@@ -93,10 +93,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 308px;
+  margin-top: 202px;
+
 
   @include _768 {
-    margin-top: 450px;
+    margin-top: 414px;
     align-items: center;
   }
 
@@ -227,6 +228,22 @@
 
     @include _370 {
       font-size: 32px;
+    }
+  }
+
+  &__offer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include _768 {
+      justify-content: center;
+    }
+
+    p {
+      max-width: 455px;
+      width: 100%;
     }
   }
 }

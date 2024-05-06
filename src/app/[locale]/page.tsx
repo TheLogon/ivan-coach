@@ -40,7 +40,7 @@ export default function Home() {
 
 	return (
 		<>
-			<StartScreen />
+			{locale == "en" && <StartScreen />}
 			<Header linkOne={t("header.link-1")} linkTwo={t("header.link-2")} linkThree={t("header.link-3")} linkFour={t("header.link-4")} />
 			<div id="intro" className={styles.intro}>
 				<div className={styles.intro__slider}>
@@ -58,15 +58,18 @@ export default function Home() {
 							<div className={styles.offer__btns}>
 								<BtnBay />
 								<div className={[styles.offer__btn, BibasBold.className].join(" ")}>{t("intro.text-1")}</div>
-								<Link href="https://pay.ziina.com/ivanrazmazin13/KBChQUWwo" className={[styles.offer__btn, styles.red, BibasBold.className].join(" ")}>
-									{t("intro.btn")}
-								</Link>
 								{locale == "en" && (
 									<div className={[styles.offer__text, BibasBold.className].join(" ")}>
 										<span>+</span>
 										{t("intro.text-2")}
 									</div>
 								)}
+							</div>
+							<div className={styles.offer__offer}>
+								<Link href="https://pay.ziina.com/ivanrazmazin13/KBChQUWwo" className={[styles.offer__btn, styles.red, BibasBold.className].join(" ")}>
+									{t("intro.btn")}
+								</Link>
+								<p className={styles.offer__descr}>{t("intro.text-3")}</p>
 							</div>
 						</div>
 					</div>

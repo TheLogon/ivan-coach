@@ -128,7 +128,7 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 					</div>
 				</SwiperSlide>
 			</Swiper>
-
+			<p className={styles.start__slide_descr}>Please be kind to mention your email during payment, because I’ll send a link with program on your email address</p>
 			<button
 				onClick={() => {
 					btn(false)
