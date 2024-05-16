@@ -35,8 +35,8 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<Image src={SlideOne} width={408} height={350} alt="" />
 					</div>
 					<div className={styles.start__slide_price}>
-						<p className={BibasBold.className}>99 AED</p>
-						<p className={BibasBold.className}>149 AED</p>
+						<p className={BibasBold.className}>99 AED (26,95$)</p>
+						<p className={BibasBold.className}>149 AED </p>
 					</div>
 					<div className={styles.start__slide_descr}>
 						<p>You’ll find out all features of training, and where to make a focus for wide shoulders</p>
@@ -55,8 +55,8 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<Image src={SlideTwo} width={408} height={350} alt="" />
 					</div>
 					<div className={styles.start__slide_price}>
-						<p className={BibasBold.className}>99 AED</p>
-						<p className={BibasBold.className}>149 AED</p>
+						<p className={BibasBold.className}>99 AED (26,95$)</p>
+						<p className={BibasBold.className}>149 AED </p>
 					</div>
 					<div className={styles.start__slide_descr}>
 						<p>You’ll get knowledge about arms muscles that you didn’t know and didn’t train</p>
@@ -75,8 +75,8 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<Image src={SlideThree} width={408} height={350} alt="" />
 					</div>
 					<div className={styles.start__slide_price}>
-						<p className={BibasBold.className}>99 AED</p>
-						<p className={BibasBold.className}>149 AED</p>
+						<p className={BibasBold.className}>99 AED (26,95$)</p>
+						<p className={BibasBold.className}>149 AED </p>
 					</div>
 					<div className={styles.start__slide_descr}>
 						<p>This program contains exercises that make your abs BURN 🔥</p>
@@ -95,8 +95,8 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<Image src={SlideFour} width={408} height={350} alt="" />
 					</div>
 					<div className={styles.start__slide_price}>
-						<p className={BibasBold.className}>99 AED</p>
-						<p className={BibasBold.className}>149 AED</p>
+						<p className={BibasBold.className}>99 AED (26,95$)</p>
+						<p className={BibasBold.className}>149 AED </p>
 					</div>
 					<div className={styles.start__slide_descr}>
 						<p>We’re pumping out all the back and which muscles are responsible for the back width</p>
@@ -115,8 +115,8 @@ export function StartScreenSlider({ btn }: { btn: Function }) {
 						<Image src={SlideFive} width={408} height={350} alt="" />
 					</div>
 					<div className={styles.start__slide_price}>
-						<p className={BibasBold.className}>99 AED</p>
-						<p className={BibasBold.className}>149 AED</p>
+						<p className={BibasBold.className}>99 AED (26,95$)</p>
+						<p className={BibasBold.className}>149 AED </p>
 					</div>
 					<div className={styles.start__slide_descr}>
 						<p>You will be shocked as in a month your glutes will become bigger and rounder. You never tried most of exercises and techniques</p>
