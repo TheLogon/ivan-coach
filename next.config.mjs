@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 import withVideos from "next-videos"
-import createNextIntlPlugin from "next-intl/plugin"
-const withNextIntl = createNextIntlPlugin()
+// import createNextIntlPlugin from "next-intl/plugin"
+// const withNextIntl = createNextIntlPlugin()
 
 const nextConfig = {
 	images: {
@@ -12,4 +12,5 @@ const nextConfig = {
 	// output: "export",
 }
 
-export default withNextIntl(withVideos(nextConfig))
+export default withVideos(nextConfig)
+// export default withNextIntl(withVideos(nextConfig))

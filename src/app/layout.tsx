@@ -1,10 +1,10 @@
 import type { Metadata } from "next"
-import { NextIntlClientProvider } from "next-intl"
+// import { NextIntlClientProvider } from "next-intl"
 import "@/styles/globals.scss"
 
 export const metadata: Metadata = {
-	title: "IVAN YOUR ONLINE COACH",
-	description: "IVAN YOUR ONLINE COACH",
+	title: "Nutrition",
+	description: "Press «NUTRITION» button to get the MEAL PLAN for your goal",
 }
 
 export default function RootLayout({
@@ -17,7 +17,8 @@ export default function RootLayout({
 	return (
 		<html lang={locale}>
 			<body>
-				<NextIntlClientProvider locale={locale}>{children}</NextIntlClientProvider>
+				{/* <NextIntlClientProvider locale={locale}>{children}</NextIntlClientProvider> */}
+				{children}
 			</body>
 		</html>
 	)
