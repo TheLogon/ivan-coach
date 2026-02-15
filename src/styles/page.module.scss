@@ -1560,6 +1560,17 @@
     }
   }
 
+  &__text {
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: $krasnyy;
+
+    span {
+      color: #f8d437;
+    }
+  }
+
   // .start__btn
 
   &__btn {
@@ -1573,7 +1584,7 @@
     font-size: 24px;
     text-transform: uppercase;
     line-height: 100%;
-    background-color: $krasnyy;
+    background-color: #8d8d8d;
     margin-bottom: 15px;
   }
 }

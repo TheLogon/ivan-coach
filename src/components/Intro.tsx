@@ -61,7 +61,7 @@ export function Intro() {
 						<a href="https://t.me/ivan_razmazin_bot" className={styles.preview__btn}>
 							<p className={BibasBold.className}>GET MY PLAN</p>
 						</a>
-						<p className={styles.preview__descr}>If button doesn’t work <br /> <span>→</span> Open in browser (...)</p>
+						<p className={styles.preview__text}>If button doesn’t work <br /> <span>→</span> Open in browser (...)</p>
 					</div>
 				</div>
 			</div>
